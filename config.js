@@ -2,17 +2,17 @@ const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
 function convertToBool(text, fault = 'true') {
-    return text === fault ? true : false;
+    return text === fault ? true : true;
 }
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || "aMA3ATxL#P8tF1sQwOdQZwgys992W4RbRU5FamAdjfU7eLuxUMMY",
+    SESSION_ID: process.env.SESSION_ID || "CNYBUApa#A6Y8S6zP29hysabXwmo3wG2T9sc0PGFDoOHopPzGl0g",
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
     READ_MESSAGE: process.env.READ_MESSAGE || "true", // Added auto-read configuration
-    MODE: process.env.MODE || "public",
-    AUTO_VOICE: process.env.AUTO_VOICE || "true",
+    MODE: process.env.MODE || "privatr",
+    AUTO_VOICE: process.env.AUTO_VOICE || "falsr",
     AUTO_STICKER: process.env.AUTO_STICKER || "false",
-    AUTO_REPLY: process.env.AUTO_REPLY || "false",
+    AUTO_REPLY: process.env.AUTO_REPLY || "true",
     ALIVE_IMG: process.env.ALIVE_IMG || "https://i.imgur.com/nqCsIHZ.jpeg",
     ALIVE_MSG: process.env.ALIVE_MSG || "HII DEAR IM ONLINE I'M SANA_MD WHATSAPP BOT 😊♻️",
     ANTI_LINK: process.env.ANTI_LINK || "true",
